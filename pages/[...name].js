@@ -257,7 +257,7 @@ const Wish = ({ history }) => {
 					/> */}
 				</div>
 			</main>
-			<audio ref={audioRef} id="player" autoPlay>
+			<audio ref={audioRef} id="player" autoPlay loop>
 				<source src="/media/hbd.mp3" />
 			</audio>
 		</div>

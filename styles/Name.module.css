@@ -199,3 +199,14 @@
   margin-bottom: 10px;
   font-weight: bold;
 }
+
+@media (max-width: 768px) {
+  .card {
+    border-radius: 10px;
+    width: 100%;
+    flex-direction: Column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
