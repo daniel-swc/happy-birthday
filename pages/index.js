@@ -7,7 +7,7 @@ import { Button } from "../components";
 
 export default function Home() {
   const { themes, setTheme, currentTheme } = useTheme();
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState("Ernildo");
 
   const handleInput = (e) => {
     e.preventDefault();
@@ -33,7 +33,7 @@ export default function Home() {
       <main>
         <div className={styles.main}>
           <h1 className={styles.title}>
-            Create a <span className={styles.span}>Birthday</span> Wish
+            Escolha uma cor
           </h1>
         </div>
         {/* Theme Color  */}
@@ -65,12 +65,13 @@ export default function Home() {
               name="go"
               className={styles.input}
               placeholder="Enter name of the person"
-              value={value}
+              value="Ernildo"
+              readOnly="true"
               onChange={(e) => setValue(e.target.value)}
             />
-            <Button className={styles.button} type="submit" text="Go!" />
+            <Button className={styles.button} type="submit" text="Bora!" />
           </form>
-          <p className={styles.desc}>
+          {/* <p className={styles.desc}>
             Crafted by{" "}
             <a
               className={styles.span}
@@ -93,7 +94,7 @@ export default function Home() {
               contributors
             </a>
             !
-          </p>
+          </p> */}
         </div>
       </main>
     </div>

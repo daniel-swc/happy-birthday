@@ -237,7 +237,7 @@ const Wish = ({ history }) => {
 					</div>
 				</div>
 				<div className={styles.buttonContainer}>
-					{history[0] == "/" ? <CopyLinkButton /> : ""}
+					{/* {history[0] == "/" ? <CopyLinkButton /> : ""}
 
 					{history[0] == "/" ? (
 						<Button
@@ -249,7 +249,7 @@ const Wish = ({ history }) => {
 						/>
 					) : (
 						""
-					)}
+					)} */}
 
 					{/* <Button
 						onClick={() => router.push("/")}
@@ -258,7 +258,7 @@ const Wish = ({ history }) => {
 				</div>
 			</main>
 			<audio ref={audioRef} id="player" autoPlay>
-				<source src="media/hbd.mp3" />
+				<source src="/media/hbd.mp3" />
 			</audio>
 		</div>
 	);
