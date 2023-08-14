@@ -205,7 +205,7 @@ const Wish = ({ history }) => {
 				</div>
 				<div className={styles.card}>
 					<img src="/_Jaicon.png" height="121" width="121" />
-					<div><pre>
+					<div><pre className={styles.code}> 
 						{'<title>Feliz Aniversário Ernildo!</title>'}<br/>
 						{'<style>'}<br/>
 						{'.message {'}<br/>
