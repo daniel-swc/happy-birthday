@@ -3,7 +3,6 @@
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -20,6 +19,11 @@
 .animate {
   animation: zoom 2s ease-in-out;
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 @keyframes zoom {
@@ -42,7 +46,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+
 }
 
 .span {
@@ -169,4 +173,29 @@
   align-items: center;
   flex-direction: column;
   row-gap: 1em;
+}
+
+.card {
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+}
+
+.card img {
+  padding: 10px;
+}
+
+.card div {
+  padding: 10px;
+}
+
+.card p {
+  margin: 0;
+  margin-bottom: 5px;
+}
+.card p:first-of-type {
+  margin-bottom: 10px;
+  font-weight: bold;
 }

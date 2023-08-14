@@ -62,12 +62,12 @@ const Wish = ({ history }) => {
 	};
 
 	const title = (name) => {
-		const wish = "Happy Birthday " + name + "!";
+		const wish = "Feliz Aniversário " + name + "!";
 		const base_letters = [];
 		const name_letters = [];
 
 		for (let i = 0; i < wish.length; i++) {
-			if (i < 15) {
+			if (i < 17) {
 				const letter = wish.charAt(i);
 				base_letters.push(
 					<span key={i} style={{ "--i": i + 1 }}>
@@ -126,10 +126,10 @@ const Wish = ({ history }) => {
 	return (
 		<div className={styles.container}>
 			<Head>
-				<title>Happy Birthday {name && name[0]}</title>
+				<title>Feliz Aniversário {name && name[0]}</title>
 				<meta
 					name="description"
-					content={`A surprise birthday wish!`}
+					content={`Desejo-lhe Feliz Aniversário!`}
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
@@ -143,7 +143,85 @@ const Wish = ({ history }) => {
 						{messages[randomNumber(0, messages.length)].value}
 					</p>
 				</div>
+				<div className={styles.card}>
+					<img src="/_Andre.png" height="121" width="121" />
+					<div>
+						<p>Parabéns, muitas felicidades, saúde e sucesso! 🎉🎂</p>
+						<p>Que seu novo ciclo seja repleto de desafios que te façam crescer cada vez mais, nos surpreendendo como já vem fazendo, entregando tudo com muita qualidade!</p>
+						<p>Aproveite muito o seu dia!</p>
+					</div>
+				</div>
+				<div className={styles.card}>
+					<img src="/_Daniel.png" height="121" width="121" />
+					<div>
+						<p>🎉 Parabéns, Ernildo! 🎂</p>
+						<p>Hoje tudo é possível, por isso sonhe ainda mais alto do que já sonhou e conquiste tudo aquilo que ainda não conquistou.</p>
+						<p>Feliz Aniversário!</p>
+					</div>
+				</div>
+				<div className={styles.card}>
+					<img src="/_Dariel.png" height="121" width="121" />
+					<div>
+						<p>🎉 Parabéns, Ernildo! 🎉</p>
+						<p>Hoje é um dia especial, e estamos aqui para celebrar você, o incrível Ernildo! 🥳</p>
+						<p>Desejamos a você um dia cheio de alegria, rodeado de amigos, família e muita diversão!</p>
+						<p>Que este novo ano de vida seja repleto de conquistas, saúde, amor e sucesso em todas as áreas da sua vida!</p>
+						<p>Continue brilhando como sempre e alcançando seus sonhos. Feliz aniversário!</p>
+						<p><strong>#PIMTeam</strong></p>
+					</div>
+				</div>
+				<div className={styles.card}>
+					<img src="/_Diego.png" height="121" width="121" />
+					<div>
+						<p>🎉 Feliz Aniversário, Ernildo! 🎂</p>
+						<p>O dia do Aniversário é sempre um dia especial, espero que você tenha aproveitado seu dia cheio de alegria, amor e sorrisos!</p>
+						<p>Que este novo ano da sua vida seja repleto de conquistas e momentos incríveis.</p>
+						<p>Que vc continue sendo esta pessoa leve e descontraida!</p>
+						<p>Grande abraço!!!</p>
+					</div>
+				</div>
+				<div className={styles.card}>
+					<img src="/_Ester.png" height="121" width="121" />
+					<div>
+						<p>Feliz Aniversário Ernildo! </p>
+						<p>Desejo muitos anos de vida com muito código e coisas boas pro melhor front-end da Way2 🎈🎉</p>
+					</div>
+				</div>
+				<div className={styles.card}>
+					<img src="/_Franssa.png" height="121" width="121" />
+					<div>
+						<p>Feliz Aniversário!</p>
+						<p>Aproveita esse novo ciclo, cada vez com mais experiência para cumprir metas e concluir desafios!</p>
+						<p>Grande abraço, você é o cara!</p>
+					</div>
+				</div>
+				<div className={styles.card}>
+					<img src="/_Gabriel.png" height="121" width="121" />
+					<div>
+					<p><b>Parabéns, Ernildo!</b></p>
+					<p>Aproveite seu dia mano!</p>
+					<p>Desejo um aniversário repleto de alegria, sucesso, realizações e muito código! Que todos os seus sonhos se concretizem e que você continue sendo essa pessoa incrível!</p>
+					</div>
+				</div>
 
+				<div className={styles.card}>
+					<img src="/_Luis.png" height="121" width="121" />
+					<div>
+						<p>Parabéns Ernildo!</p>
+						<p>Muitas felicidades, conquistas e sucessos</p>
+						<p>Que sua vida seja cheia de css bem formatados, que as vulnerabilidades que você encontrar pelo caminho sejam fáceis de serem corrigidos e que sua rede não caia (a de internet e a física)</p>
+						<p>Aproveite muito seu dia, tmj</p>
+					</div>
+				</div>
+				<div className={styles.card}>
+					<img src="/_Warley.png" height="121" width="121" />
+					<div>
+						<p>Feliz Aniversário, Ernildo!</p>
+						<p>Como um desenvolvedor front-end talentoso, você traz criatividade e funcionalidade para a web. Hoje é o seu dia especial, e espero que esteja repleto de alegria, realização e código bem organizado! 🎉🎂</p>
+						<p>Que o seu próximo ano seja cheio de novos desafios empolgantes, projetos incríveis e muito sucesso no mundo do desenvolvimento front-end. Continue criando interfaces impressionantes e melhorando a experiência online para todos nós!</p>
+						<p>Divirta-se muito no seu dia e aproveite cada momento. Parabéns novamente!</p>
+					</div>
+				</div>
 				<div className={styles.buttonContainer}>
 					{history[0] == "/" ? <CopyLinkButton /> : ""}
 
@@ -159,10 +237,10 @@ const Wish = ({ history }) => {
 						""
 					)}
 
-					<Button
+					{/* <Button
 						onClick={() => router.push("/")}
 						text="&larr; Create a wish"
-					/>
+					/> */}
 				</div>
 			</main>
 			<audio ref={audioRef} id="player" autoPlay>
