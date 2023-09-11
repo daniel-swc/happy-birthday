@@ -201,15 +201,13 @@ const Wish = ({ history }) => {
 						<p>Que suas jornadas sejam sempre repletas de conquistas e de sucessos!!! Muito bom tê-lo como colega do time. Forte Abraço.</p>
 					</div>
 				</div>
-				{/* <div className={styles.card}>
+				<div className={styles.card}>
 					<img src="/_Luis.png" height="121" width="121" />
 					<div>
-						<p>Parabéns Ernildo!</p>
-						<p>Muitas felicidades, conquistas e sucessos</p>
-						<p>Que sua vida seja cheia de css bem formatados, que as vulnerabilidades que você encontrar pelo caminho sejam fáceis de serem corrigidos e que sua rede não caia (a de internet e a física)</p>
-						<p>Aproveite muito seu dia, tmj</p>
+						<p>Parabéns Fernando!</p>
+						<p>Tudo de bom! Muita paz, saúde, felicidades! Curta bem seu dia!</p>
 					</div>
-				</div> */}
+				</div>
 				<div className={styles.card}>
 					<img src="/_Warley.png" height="121" width="121" />
 					<div>
