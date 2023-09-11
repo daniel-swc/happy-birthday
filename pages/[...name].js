@@ -218,6 +218,7 @@ const Wish = ({ history }) => {
 						<p>Um brinde, mais linhas de código e mais quilômetros na estrada! Desejo a você um ano repleto de projetos de sucesso e viagens inesquecíveis. Aproveite seu dia especial e que sua vida esteja sempre repleta de felicidade e aventura! 🎂🌄🚀</p>
 					</div>
 				</div>
+				<h2>Presente especial do PIM para suas proximas viagens.</h2>
 				<img src="/komPIM.png" width="30%"></img>
 				
 				<div className={styles.buttonContainer}>
