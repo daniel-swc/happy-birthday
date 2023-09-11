@@ -62,13 +62,13 @@
 }
 
 .theme {
-  position: absolute;
+  /* position: absolute; */
   width: 80%;
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   justify-items: center;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .theme input {
@@ -91,4 +91,5 @@
   padding-right: 10px;
   text-align: center;
   gap: 5px;
+  height: 30px;
 }
