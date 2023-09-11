@@ -67,12 +67,28 @@
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   justify-items: center;
+  display: flex;
+  flex-direction: row;
 }
 
 .theme input {
   cursor: pointer;
+  margin-top: 5px;
+}
+
+.theme label {
+  cursor: pointer;
+  margin-top: 1px;
 }
 
 .button {
   margin-right: 8px;
+}
+
+.destination{
+  display: flex;
+  flex-direction: row;
+  padding-right: 10px;
+  text-align: center;
+  gap: 5px;
 }

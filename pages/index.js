@@ -7,14 +7,14 @@ import { Button } from "../components";
 
 export default function Home() {
   const { themes, setTheme, currentTheme } = useTheme();
-  const [value, setValue] = useState("Ernildo");
+  const [value, setValue] = useState("Fernando");
 
   const handleInput = (e) => {
     e.preventDefault();
     const id = currentTheme.id;
 
     if (!value || value[0] === " ") {
-      alert("Please enter a name!");
+      alert("Por favor informe seu nome");
       return;
     }
     if (id == 0) Router.push(value);
@@ -26,14 +26,14 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Feliz aniversário</title>
-        <meta name="description" content="Aplicativo para gerar mensagens de aniversário :)" />
+        <meta name="description" content="APIMcativo para gerar mensagens de aniversário :)" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <div className={styles.main}>
           <h1 className={styles.title}>
-            Escolha uma cor
+            Escolha seu destino
           </h1>
         </div>
         {/* Theme Color  */}
@@ -45,15 +45,18 @@ export default function Home() {
             onChange={(e) => setTheme(e.target.id)}
           >
             {themes.map((item) => (
-              <input
-                key={item.id}
-                type="radio"
-                className={item.name}
-                id={item.id}
-                name="theme"
-                value={item.color}
-                defaultChecked={currentTheme.id === item.id}
-              />
+              <div className={styles.destination}>
+                <input
+                  key={item.id}
+                  type="radio"
+                  className={item.name}
+                  id={item.id}
+                  name="theme"
+                  value={item.color}
+                  defaultChecked={currentTheme.id === item.id}
+                />
+                <label for={item.id}>{item.label}</label>
+              </div>
             ))}
           </form>
         </div>
@@ -64,8 +67,8 @@ export default function Home() {
               id="input"
               name="go"
               className={styles.input}
-              placeholder="Enter name of the person"
-              value="Ernildo"
+              placeholder="Informe seu nome"
+              value="Fernando"
               readOnly="true"
               onChange={(e) => setValue(e.target.value)}
             />

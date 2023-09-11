@@ -5,11 +5,11 @@ import React, { useState, useEffect } from "react";
 const useTheme = () => {
 
   const themes = [
-    { id: 0, name: "blue", color: "#0070f3" },
-    { id: 1, name: "green", color: "#10B981" },
-    { id: 2, name: "violet", color: "#8B5CF6" },
-    { id: 3, name: "yellow", color: "#FBBF24" },
-    { id: 4, name: "red", color: "#E11D48" },
+    { id: 0, name: "blue", color: "#0070f3", label: "Paris" },
+    { id: 1, name: "green", color: "#10B981", label: "Australia" },
+    { id: 2, name: "violet", color: "#8B5CF6", label: "Madagascar" },
+    { id: 3, name: "yellow", color: "#FBBF24", label: "Groenlandia" },
+    { id: 4, name: "red", color: "#E11D48", label: "Japão" },
   ];
 
   const [currentTheme, setCurrentTheme] = useState(themes[0]);
