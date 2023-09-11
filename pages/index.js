@@ -45,7 +45,7 @@ export default function Home() {
             onChange={(e) => setTheme(e.target.id)}
           >
             {themes.map((item) => (
-              <div className={styles.destination}>
+              <div className={styles.destination} key={item.label}> 
                 <input
                   key={item.id}
                   type="radio"
@@ -69,7 +69,7 @@ export default function Home() {
               className={styles.input}
               placeholder="Informe seu nome"
               value="Fernando"
-              readOnly="true"
+              readOnly={true}
               onChange={(e) => setValue(e.target.value)}
             />
             <Button className={styles.button} type="submit" text="Bora!" />
