@@ -219,7 +219,7 @@ const Wish = ({ history }) => {
 					</div>
 				</div>
 				<h2>Presente especial do PIM para suas proximas viagens.</h2>
-				<img src="/komPIM.png" width="30%"></img>
+				<img src="/komPIM.png" width="60%"></img>
 				
 				<div className={styles.buttonContainer}>
 					{/* {history[0] == "/" ? <CopyLinkButton /> : ""}
