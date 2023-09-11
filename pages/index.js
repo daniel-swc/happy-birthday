@@ -55,7 +55,7 @@ export default function Home() {
                   value={item.color}
                   defaultChecked={currentTheme.id === item.id}
                 />
-                <label for={item.id}>{item.label}</label>
+                <label htmlFor={item.id}>{item.label}</label>
               </div>
             ))}
           </form>
